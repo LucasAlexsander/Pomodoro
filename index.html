@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Pomodoro</title>
+</head>
+<body>
+    <header>
+        <div class="buttonsSetTime">
+            <div class="text">
+                <h2>Set Time Study</h2>
+                <h2>Set Time Relex</h2>
+            </div>
+            <div class="setTime">
+                <select name="timeStudy" id="timeStudy">
+                    <option value="15">15 minutes</option>
+                    <option value="25" selected>25 minutes</option>
+                    <option value="35">35 minutes</option>
+                    <option value="45">45 minutes</option>
+                </select>
+                <select name="timeRelex" id="timeRelex">
+                    <option value="15">15 minutes</option>
+                    <option value="25" selected>25 minutes</option>
+                    <option value="35">35 minutes</option>
+                    <option value="45">45 minutes</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="roundBox">
+            
+            <div class="alarm" id="alarmIcon" >
+                <ion-icon name="alarm-outline"></ion-icon>
+            </div>
+
+            <div class="time">
+                <span id="minutes"></span> <span id="points">:</span> <span id="seconds"></span> <!-- Minutos : Segundos -->
+            </div>
+            <div class="buttons">
+            <!-- De começo vai aparecer "Iniciar" Quando Acabar o tempo mudar para "iníciar descanço", caso contrário ao clicar mudar para "Continuar" -->
+                <div class="buttonsAction">
+                    <button id="start">Start</button> 
+                    <button id="reset">Reset</button>
+                </div>
+
+                <button id="relexTime">Start Relex</button>
+                
+            </div>
+        </div>
+    </main>
+
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
